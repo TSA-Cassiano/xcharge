@@ -24,7 +24,7 @@ jobs:
           #python -m pip install --upgrade pip
           pip3 install pandas
           pip install pytest
-          pip3 install setup.py
+          python -m pip install .
       - name: Test with pytest
         working-directory: ./pytest
         run: |
